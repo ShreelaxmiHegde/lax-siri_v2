@@ -1,14 +1,9 @@
 const projects = [
   {
     title: "Accommate",
-    description: "Full-stack An accommodation platform for students to find and book stays near their campus.",
-    demo: "https://accommate.onrender.com/Accommate",
-    repo: "https://github.com/ShreelaxmiHegde/Accommate",
-    tech: ["MERN", "Render", "Cloudinary"]
-  },
-  {
-    title: "Sandhi Splitter",
-    description: "AI-powered Sanskrit Sandhi splitting tool with backend API.",
+    description: "A Full-Stack accommodation platform for students to find and book stays near their campus.",
+    imgUrl: "project1.png",
+    tech: ["MERN", "Render", "Cloudinary", "Passport.js", "MVC Framework"],
     demo: "https://accommate.onrender.com/Accommate",
     repo: "https://github.com/ShreelaxmiHegde/Accommate"
   }
@@ -16,34 +11,51 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-6 max-w-6xl mx-auto">
-      <h2 className="text-3xl font-bold">Works</h2>
+    <section id="works" className="section" >
+      <span className="section-name">Works</span>
 
-      <div className="mt-8 grid md:grid-cols-2 gap-6">
+      <div className="mt-8">
         {projects.map(p => (
-          <div key={p.title} className="p-6 border rounded-xl hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold">{p.title}</h3>
-            <p className="mt-2 text-gray-600">{p.description}</p>
-            <div>
-              {p.tech?.map(t => (
-                <span>{t}</span>
-              ))}
+          <div key={p.title} className="card grid md:grid-cols-2 gap-3 w-[90%] md:w-auto">
+            <img src={p.imgUrl} alt="accommate-dashboard" className="rounded-xl" />
+            <div className="flex flex-col justify-between">
+              <h3 className="text-2xl font-bold mt-3 text-[#039bfc]">
+                {p.title}
+                <span className="project-badge">● E-Commerce</span>
+              </h3>
+              <p className="mt-2 text-gray-300">{p.description}</p>
+              <p className="mt-2 text-gray-400 text-sm">
+                ▸ User Authentication and Authorization
+                <br />
+                ▸ CRUD operations on Listings
+                <br />
+                ▸ Ratings and Reviews...
+              </p>
+              <div className="flex flex-wrap gap-3 mt-2">
+                {p.tech?.map(t => (
+                  <span key={t} className="tech-badge">{t}</span>
+                ))}
+              </div>
+              <div className="flex flex-wrap gap-3 mt-4">
+                <a
+                  href={p.demo}
+                  target="_blank"
+                  className="project-btn"
+                >
+                  Visit website
+                  <i className="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+                <a
+                  href={p.repo}
+                  target="_blank"
+                  className="project-btn"
+                >
+                  Github Repo
+                  <i className="fa-solid fa-arrow-up-right-from-square ml-1"></i>
+                </a>
+              </div>
             </div>
-            <button
-              // href={p.demo}
-              // target="_blank"
-              className="mt-4  text-blue-600 text-sm"
-            >
-              Visit website
-            </button>
-            <button
-              // href={p.repo}
-              // target="_blank"
-              className="mt-4 text-blue-600 text-sm"
-            >
-              Github Repo
-            </button>
-          </div> 
+          </div>
         ))}
       </div>
     </section>
