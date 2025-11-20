@@ -21,8 +21,8 @@ export default function Navbar() {
             {/* Desktop view */}
             <div className="hidden md:flex gap-6 text-sm nav-items">
                 <a href="#about" className="font-bold text-lg">About</a>
-                <a href="#works" className="font-bold text-lg">Projects</a>
                 <a href="#skills" className="font-bold text-lg">Skills</a>
+                <a href="#works" className="font-bold text-lg">Works</a>
                 <a href="#experience" className="font-bold text-lg">Experience</a>
                 <a href="#contact" className="font-bold text-lg">Contact</a>
             </div>
@@ -31,8 +31,8 @@ export default function Navbar() {
             {toggle && 
             (<div className="flex flex-col gap-4 text-sm absolute right-0 top-20 z-50 bg-[#ffffff0d] backdrop-blur-sm p-6 shadow-xl/5 shadow-sky-100">
                 <a href="#about" className="font-bold text-lg">About</a>
-                <a href="#works" className="font-bold text-lg">Projects</a>
                 <a href="#skills" className="font-bold text-lg">Skills</a>
+                <a href="#works" className="font-bold text-lg">Works</a>
                 <a href="#experience" className="font-bold text-lg">Experience</a>
                 <a href="#contact" className="font-bold text-lg">Contact</a>
             </div>)}
