@@ -11,7 +11,7 @@ export default function Navbar() {
     return (
         <nav className="w-full fixed top-0 left-0 z-50 bg-[#ffffff0d] backdrop-blur-sm py-3 shadow-xl/5 shadow-sky-100">
         <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-            <div className="tracking-tight font-bold text-3xl bg-linear-to-r from-[#0379fc] to-[#22ffd7] bg-clip-text font-extrabold text-transparent">
+            <div className="tracking-tight font-bold text-2xl md:text-3xl bg-linear-to-r from-[#0379fc] to-[#22ffd7] bg-clip-text font-extrabold text-transparent">
                 Shreelaxmi Hegde
             </div>
             <div className="md:hidden hamburger-menu" onClick={handleToggle}>

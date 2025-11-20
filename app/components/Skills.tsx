@@ -7,9 +7,7 @@ const skills = {
 export default function Skills() {
   return (
     <section className="section" id="skills">
-      <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0379fc] to-[#22ffd7]">
-        Skills & Expertise
-      </span>
+      <span className="section-name">Skills & Expertise</span>
 
       <div className="flex flex-wrap gap-4 mt-8">
         {Object.entries(skills).map(([category, list]) => (
@@ -47,9 +45,7 @@ export default function Skills() {
             )}
             <div className="flex flex-wrap gap-3 mt-2">
               {list.map((skill) => (
-                <span key={skill}
-                  className="px-2 py-1 rounded-full bg-white/5 border border-white/10 text-sm text-[#2288ff] hover:bg-white/10 transition"
-                >
+                <span key={skill} className="tech-badge">
                   {skill}
                 </span>
               ))}
