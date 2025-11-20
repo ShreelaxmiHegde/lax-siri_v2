@@ -47,12 +47,11 @@ body {
   }
   
   .media-btn {
-    @apply w-8 h-8 flex items-center justify-center rounded-full hover:scale-105 transition-all
+    @apply flex items-center justify-center hover:scale-105 transition-all
   }
   
   .card {
     @apply bg-[#0f0f0f] border border-white/5 rounded-xl p-5 shadow-lg shadow-black/20 hover:shadow-xl hover:shadow-black/30 transition duration-300 backdrop-blur-sm
-    hover:-translate-y-1;
   }
 
   .tech-badge {
@@ -60,7 +59,7 @@ body {
   }
 
   .section-name {
-    @apply text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#0379fc] to-[#22ffd7]
+    @apply text-4xl md:text-5xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-[#0379fc] to-[#22ffd7]
   }
 
   .project-btn {
