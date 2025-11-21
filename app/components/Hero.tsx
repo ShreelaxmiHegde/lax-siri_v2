@@ -1,24 +1,27 @@
 export default function Hero() {
   return (
     <section id="about" className="section min-h-screen grid grid-cols-1 md:grid-cols-2 items-center">
+      {/* animation */}
+      <div className="absolute w-48 h-48 bg-[#0379fc] rounded-full blur-[90px] opacity-20 top-20 left-10"></div>
+
       {/* Left - Text */}
       <div className="space-y-6 order-2 md:order-1">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+        <h1 className="text-4xl md:text-6xl text-center md:text-left font-bold leading-tight">
           Full-Stack Developer Building
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0379fc] to-[#22ffd7]">
             {" "}Scalable Web Apps
           </span>
         </h1>
 
-        <p className="text-gray-300 text-lg">
+        <p className="text-gray-300 text-base md:text-lg text-center md:text-left">
           MERN · APIs · AI/ML Integration · Clean Architecture
         </p>
 
-        <p className="text-gray-400 max-w-xl">
+        <p className="text-gray-400 text-sm md:text-lg max-w-xl text-center md:text-left">
           I build end-to-end web applications with focus on performance, UI clarity, and real-world system design.
         </p>
 
-        <div className="flex gap-4 pt-2 flex-wrap">
+        <div className="flex gap-4 pt-2 flex-wrap justify-center md:justify-start">
           <a
             href="#works"
             className="px-6 py-3 font-black rounded-lg bg-gradient-to-r from-[#0379fc] to-[#22ffd7] text-black hover:opacity-90 transition"
@@ -57,7 +60,7 @@ export default function Hero() {
 
             {/* Dev.to */}
             <a href="https://dev.to/shreelaxmihegde"
-              className="media-btn"
+              className="media-btn text-white"
             >
               <i className="fa-brands fa-dev text-3xl"></i>
             </a>

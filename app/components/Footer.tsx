@@ -4,7 +4,7 @@ export default function Footer() {
             <div className="max-w-4xl mx-auto flex flex-col items-center gap-8">
                 <span className="section-name text-center">Let's Connect</span>
 
-                <p className="text-center text-lg text-gray-400 max-w-md">
+                <p className="text-center text-base md:text-lg text-gray-400 max-w-md">
                     Open to internships, freelance work, collaboration, and tech discussions.
                     Feel free to reach out!
                 </p>
@@ -42,11 +42,6 @@ export default function Footer() {
                         className="media-btn"
                     >
                         <i className="fa-brands fa-dev text-3xl text-white"></i>
-                    </a>
-
-                    {/* Discord */}
-                    <a href="" className="media-btn gap-3 text-lg md:text-xl">
-                        <i className="fa-brands fa-discord text-2xl text-[#2e4fe5]"></i>
                     </a>
                 </div>
 

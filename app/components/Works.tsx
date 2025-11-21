@@ -19,13 +19,13 @@ export default function Projects() {
           <div key={p.title} className="card grid md:grid-cols-2 gap-3 w-[90%] md:w-auto">
             <img src={p.imgUrl} alt="accommate-dashboard" className="rounded-xl" />
             <div className="flex flex-col justify-between">
-              <h3 className="text-2xl font-bold mt-3 text-[#039bfc]">
+              <h3 className="text-xl md:text-2xl font-bold mt-3 text-[#039bfc]">
                 {p.title}
                 <span className="project-badge">● E-Commerce</span>
               </h3>
-              <p className="mt-2 text-gray-300">{p.description}</p>
+              <p className="mt-2 text-sm md:text-lg text-gray-300">{p.description}</p>
               <p className="mt-2 text-gray-400 text-sm">
-                ▸ User Authentication and Authorization
+                ▸ User Authentication & Authorization
                 <br />
                 ▸ CRUD operations on Listings
                 <br />

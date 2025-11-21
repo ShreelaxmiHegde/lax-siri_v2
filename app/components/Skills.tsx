@@ -18,7 +18,7 @@ export default function Skills() {
                   <i className="fa-solid fa-code me-2"></i>
                   {category}
                 </span>
-                <p className="text-gray-400 text-sm my-3">
+                <p className="text-gray-400 text-sm md:text-base my-3">
                   Technologies I use daily for development.
                 </p>
               </div>
@@ -28,7 +28,7 @@ export default function Skills() {
                   <i className="fa-solid fa-arrow-up-right-dots me-2"></i>
                   Familiar With
                 </span>
-                <p className="text-gray-400 text-sm my-3">
+                <p className="text-gray-400 text-sm md:text-base my-3">
                   Technologies I also worked with.
                 </p>
               </div>
@@ -38,7 +38,7 @@ export default function Skills() {
                   <i className="fa-solid fa-screwdriver-wrench me-2"></i>
                   {category}
                 </span>
-                <p className="text-gray-400 text-sm my-3">
+                <p className="text-gray-400 text-sm md:text-base my-3">
                   Tools I use to get things done.
                 </p>
               </div>
