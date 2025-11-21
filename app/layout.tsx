@@ -2,10 +2,36 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shreelaxmi Hegde, Full Stack Developer",
-  description: "Skilled in MERN | Build end-to-end solutions",
-  keywords: ["Full stack developer", "MERN", "Portfolio"],
+  title: "Shreelaxmi Hegde • Full-Stack Developer",
+  description:
+    "Full Stack Developer specializing in MERN. Building scalable backend systems.",
+  keywords: [
+    "Full Stack Developer",
+    "MERN Stack",
+    "React Developer",
+    "JavaScript Developer",
+    "Web Developer",
+    "Node.js Developer",
+    "Software Engineer"
+  ],
+  openGraph: {
+    title: "Shreelaxmi Hegde • Full-Stack Developer",
+    description:
+      "Full Stack Developer building modern web applications with MERN.",
+    url: "https://ShreelaxmiHegde.vercel.app",
+    siteName: "Shreelaxmi Hegde Portfolio",
+    images: [
+      {
+        url: "/dev-img.png",
+        width: 277,
+        height: 277
+      }
+    ],
+    locale: "en_US",
+    type: "website"
+  }
 };
+
 
 export default function RootLayout({
   children,
