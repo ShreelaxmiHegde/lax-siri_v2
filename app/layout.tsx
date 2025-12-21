@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Shreelaxmi Hegde • Full-Stack Developer",
+  title: "Shreelaxmi Hegde • Full-Stack Dev",
   description:
     "Full Stack Developer specializing in MERN. Building scalable backend systems.",
   keywords: [
